@@ -1,1 +1,92 @@
-<!DOCTYPE html><html data-bs-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>CV - Brand</title><link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="/assets/fonts/ionicons.min.css"><link rel="stylesheet" href="/assets/css/styles.min.css"></head><body><nav class="navbar navbar-expand-lg fixed-top portfolio-navbar gradient navbar-dark" style="border-style: initial;"><div class="container"><a class="navbar-brand logo" href="#">Portfolio of Sunbeam Rahman</a></div></nav><main class="page cv-page"><section class="portfolio-block block-intro border-bottom"><div class="container"><div class="avatar" style="background-image:url(&quot;/assets/img/avatars/avatar.jpg&quot;);"></div><div class="about-me"><p>Hello! I am <strong>Sunbeam Rahman</strong>. I have 10+ years of experience in Geographic Information System. I am a passionate spatial problem solver.</p></div></div><section class="portfolio-block skills"><div class="container"><div class="heading"><h2>Special Skills</h2></div><div class="row"><div class="col-md-4"><div class="card special-skill-item border-0"><div class="card-header bg-transparent border-0"><i class="icon ion-android-globe fs-1 text-center"></i></div><div class="card-body"><h3 class="card-title">GIS</h3><p class="card-text">Vector data analysis, Cartography, 3D data analysis, network analysis, Web GIS and Enterprise GIS</p></div></div></div><div class="col-md-4"><div class="card special-skill-item border-0"><div class="card-header bg-transparent border-0"><i class="icon ion-code-working fs-1 text-center"></i></div><div class="card-body"><h3 class="card-title">Spatial Programming</h3><p class="card-text">Spatial data analysis with Python, Survey data management and Automated reporting</p></div></div></div><div class="col-md-4"><div class="card special-skill-item border-0"><div class="card-header bg-transparent border-0"><i class="icon ion-android-map fs-1 text-center"></i></div><div class="card-body"><h3 class="card-title">Remote Sensing</h3><p class="card-text">Satellite image processing, LULC, Change detection, photogrammetry, stereo and SAR data analysis</p></div></div></div></div></div></section></section></main><footer class="page-footer py-3 border-top"><footer class="page-footer gradient py-3 border-top"><div class="container my-4"><div class="links"><a href="#">Contact me</a></div><div class="social-icons"><a class="me-3" href="https://www.linkedin.com/in/rahmansunbeam" target="_blank"><i class="icon ion-social-linkedin"></i></a><a class="me-3" href="#"><i class="icon ion-social-twitter"></i></a><a class="me-3" href="mailto:sunbeam.rahman@live.com"><i class="icon ion-email"></i></a></div></div></footer></footer><script src="/assets/bootstrap/js/bootstrap.min.js"></script><script src="/assets/js/script.min.js"></script></body></html>
+<!DOCTYPE html><html data-bs-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>CV - Brand</title><meta name="description" content="These are all the works and expertise I have. Feel free to contact. ">
+			<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Sunbeam Rahman's Portfolio","url":"https://sunbeamrahman.com"}</script><script>
+(function() {
+
+	// JavaScript snippet handling Dark/Light mode switching
+
+	const getStoredTheme = () => localStorage.getItem('theme');
+	const setStoredTheme = theme => localStorage.setItem('theme', theme);
+	const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
+
+	const getPreferredTheme = () => {
+
+		if (forcedTheme) return forcedTheme;
+
+		const storedTheme = getStoredTheme();
+		if (storedTheme) {
+			return storedTheme;
+		}
+
+		const pageTheme = document.documentElement.getAttribute('data-bs-theme');
+
+		if (pageTheme) {
+			return pageTheme;
+		}
+
+		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	}
+
+	const setTheme = theme => {
+		if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			document.documentElement.setAttribute('data-bs-theme', 'dark');
+		} else {
+			document.documentElement.setAttribute('data-bs-theme', theme);
+		}
+	}
+
+	setTheme(getPreferredTheme());
+
+	const showActiveTheme = (theme, focus = false) => {
+		const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
+
+		if (!themeSwitchers.length) return;
+
+		document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+			element.classList.remove('active');
+			element.setAttribute('aria-pressed', 'false');
+		});
+
+		for (const themeSwitcher of themeSwitchers) {
+
+			const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
+
+			if (btnToActivate) {
+				btnToActivate.classList.add('active');
+				btnToActivate.setAttribute('aria-pressed', 'true');
+			}
+		}
+	}
+
+	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+		const storedTheme = getStoredTheme();
+		if (storedTheme !== 'light' && storedTheme !== 'dark') {
+			setTheme(getPreferredTheme());
+		}
+	});
+
+	window.addEventListener('DOMContentLoaded', () => {
+		showActiveTheme(getPreferredTheme());
+
+		document.querySelectorAll('[data-bs-theme-value]')
+			.forEach(toggle => {
+				toggle.addEventListener('click', (e) => {
+					e.preventDefault();
+					const theme = toggle.getAttribute('data-bs-theme-value');
+					setStoredTheme(theme);
+					setTheme(theme);
+					showActiveTheme(theme);
+				})
+			})
+	});
+})();
+</script><link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="/assets/fonts/ionicons.min.css"><link rel="stylesheet" href="/assets/css/styles.min.css"><title>Sunbeam Rahman</title>
+</head><body><nav class="navbar navbar-expand-lg fixed-top portfolio-navbar gradient navbar-dark" style="border-style: initial;"><div class="container"><a class="navbar-brand logo" href="#">Portfolio of Sunbeam Rahman</a><div class="theme-switcher dropdown"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
+  <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+</svg></a><div class="dropdown-menu"><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="light"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill opacity-50 me-2">
+  <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+</svg>Light</a><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-moon-stars-fill opacity-50 me-2">
+  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+</svg>Dark</a><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="auto"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-half opacity-50 me-2">
+  <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+</svg>Auto</a></div></div></div></nav><main class="page cv-page"><section class="portfolio-block block-intro border-bottom"><div class="container"><div class="avatar" style="background-image:url(&quot;/assets/img/avatars/avatar.jpg&quot;);"></div><div class="about-me"><p>Hello! I am <strong>Sunbeam Rahman</strong>. I have 10+ years of experience in Geographic Information System. I am a passionate spatial problem solver.</p></div></div><section class="portfolio-block skills"><div class="container"><div class="heading"><h2>Special Skills</h2></div><div class="row"><div class="col-md-4"><div class="card special-skill-item border-0"><div class="card-header bg-transparent border-0"><i class="icon ion-android-globe fs-1 text-center"></i></div><div class="card-body"><h3 class="card-title">GIS</h3><p class="card-text">Vector data analysis, Cartography, 3D data analysis, network analysis, Web GIS and Enterprise GIS</p></div></div></div><div class="col-md-4"><div class="card special-skill-item border-0"><div class="card-header bg-transparent border-0"><i class="icon ion-code-working fs-1 text-center"></i></div><div class="card-body"><h3 class="card-title">Spatial Programming</h3><p class="card-text">Spatial data analysis with Python, Survey data management and Automated reporting</p></div></div></div><div class="col-md-4"><div class="card special-skill-item border-0"><div class="card-header bg-transparent border-0"><i class="icon ion-android-map fs-1 text-center"></i></div><div class="card-body"><h3 class="card-title">Remote Sensing</h3><p class="card-text">Satellite image processing, LULC, Change detection, photogrammetry, stereo and SAR data analysis</p></div></div></div></div></div></section></section></main><footer class="page-footer py-3 border-top"><footer class="page-footer gradient py-3 border-top"><div class="container my-4"><div class="links"><a href="#">Contact me</a></div><div class="social-icons"><a class="me-3" href="https://www.linkedin.com/in/rahmansunbeam" target="_blank"><i class="icon ion-social-linkedin"></i></a><a class="me-3" href="#"><i class="icon ion-social-twitter"></i></a><a class="me-3" href="mailto:sunbeam.rahman@live.com"><i class="icon ion-email"></i></a></div></div></footer></footer><script src="/assets/bootstrap/js/bootstrap.min.js"></script><script src="/assets/js/script.min.js"></script></body></html>
