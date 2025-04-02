@@ -785,7 +785,7 @@ b, strong {
 
 .read-more-btn:hover {
   background-color: rgba(68, 88, 144, 0.1);
-  border: 1px solid #0ea0ff;
+  border: 1px solid;
 }
 /* footer  */
 footer{
@@ -820,7 +820,6 @@ footer i:hover{
 
 .short-text{
   font-weight: 500;
-  margin-bottom: 10px;
 }
 
 .dark-mode .short-text{
