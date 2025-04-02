@@ -821,6 +821,7 @@ footer i:hover{
 
 .short-text{
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .dark-mode .short-text{
@@ -830,8 +831,6 @@ footer i:hover{
 }
 .dark-mode .more-text{
   color:#bdbdbd;
-  font-weight: 500;
-  margin-bottom: 10px;
 }
 .dark-mode .read-more-btn{
   color:#bdbdbd;
