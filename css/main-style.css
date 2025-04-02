@@ -818,17 +818,20 @@ footer i:hover{
 .dark-mode {
   background: #121212;
 }
+
 .short-text{
   font-weight: 500;
-  padding: 0 10px;
 }
+
 .dark-mode .short-text{
   color:#bdbdbd;
   font-weight: 500;
-  padding: 0 10px;
+  margin-bottom: 10px;
 }
 .dark-mode .more-text{
   color:#bdbdbd;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 .dark-mode .read-more-btn{
   color:#bdbdbd;
