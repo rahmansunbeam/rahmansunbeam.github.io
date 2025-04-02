@@ -819,6 +819,7 @@ footer i:hover{
   background: #121212;
 }
 .dark-mode .short-text{
+  padding: 0px 10px;
   color:#bdbdbd;
 }
 .dark-mode .more-text{
