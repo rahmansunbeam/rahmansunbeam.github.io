@@ -777,7 +777,7 @@ b, strong {
   background-color: rgba(68, 88, 144, 0.1);
   color: black;
   border: none;
-  /* padding: 5px 10px; */
+  padding: 5px 10px;
   cursor: pointer;
   margin-top: 10px;
   font-size: 14px;
@@ -785,8 +785,7 @@ b, strong {
 
 .read-more-btn:hover {
   background-color: rgba(68, 88, 144, 0.1);
-  border: none;
-
+  border: 1px solid #0ea0ff;
 }
 /* footer  */
 footer{
