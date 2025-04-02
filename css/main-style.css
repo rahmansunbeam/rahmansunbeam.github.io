@@ -819,8 +819,11 @@ footer i:hover{
   background: #121212;
 }
 .short-text{
-  color:#bdbdbd;
   font-weight: 500;
+  padding: 0 10px;
+}
+.dark-mode .short-text{
+  color:#bdbdbd;
 }
 .dark-mode .more-text{
   color:#bdbdbd;
